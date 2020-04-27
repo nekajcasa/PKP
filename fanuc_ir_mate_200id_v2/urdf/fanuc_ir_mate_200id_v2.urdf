@@ -3,7 +3,7 @@
      Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="Fanuc - LR Mate-200iD_V1">
+  name="fanuc_ir_mate_200id_v2">
   <link
     name="base">
     <inertial>
@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/base.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/base.STL" />
       </geometry>
       <material
         name="">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/base.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/base.STL" />
       </geometry>
     </collision>
   </link>
@@ -48,17 +48,17 @@
     name="Link 1">
     <inertial>
       <origin
-        xyz="0.039517 -0.00071478 0.32695"
+        xyz="0.0395165862325428 -0.000714780375481283 0.326948773485214"
         rpy="0 0 0" />
       <mass
-        value="14.063" />
+        value="14.0629656801171" />
       <inertia
-        ixx="0.85884"
-        ixy="-0.00061675"
-        ixz="-0.13276"
-        iyy="0.91316"
-        iyz="-0.0011091"
-        izz="0.13315" />
+        ixx="0.858841623077969"
+        ixy="-0.00061674822246848"
+        ixz="-0.132760805503396"
+        iyy="0.913159722757177"
+        iyz="-0.00110909207111619"
+        izz="0.13314943975627" />
     </inertial>
     <visual>
       <origin
@@ -66,12 +66,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 1.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 1.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 1.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 1.STL" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 2.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 2.STL" />
       </geometry>
       <material
         name="">
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 2.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 2.STL" />
       </geometry>
     </collision>
   </link>
@@ -164,17 +164,17 @@
     name="Link 3">
     <inertial>
       <origin
-        xyz="0.0082367 0.00068032 0.017646"
+        xyz="0.0082366584893896 0.000680320793238054 0.017645839129693"
         rpy="0 0 0" />
       <mass
-        value="2.3943" />
+        value="2.39426298307034" />
       <inertia
-        ixx="0.0063347"
-        ixy="-4.9524E-05"
-        ixz="-0.00076133"
-        iyy="0.007328"
-        iyz="-6.6489E-05"
-        izz="0.0072604" />
+        ixx="0.00633470589018608"
+        ixy="-4.95237019397927E-05"
+        ixz="-0.000761330144977924"
+        iyy="0.00732797870019393"
+        iyz="-6.64889222936894E-05"
+        izz="0.00726038168046429" />
     </inertial>
     <visual>
       <origin
@@ -182,12 +182,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 3.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 3.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.79216 0.81961 0.93333 1" />
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
       </material>
     </visual>
     <collision>
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 3.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 3.STL" />
       </geometry>
     </collision>
   </link>
@@ -229,9 +229,9 @@
       <inertia
         ixx="2.6567E-08"
         ixy="-1.0653E-19"
-        ixz="-3.9397E-25"
+        ixz="-2.9299E-25"
         iyy="2.7105E-08"
-        iyz="2.9753E-24"
+        iyz="2.3689E-24"
         izz="4.1244E-08" />
     </inertial>
     <visual>
@@ -240,7 +240,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 4.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 4.STL" />
       </geometry>
       <material
         name="">
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 4.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 4.STL" />
       </geometry>
     </collision>
   </link>
@@ -298,7 +298,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 5.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 5.STL" />
       </geometry>
       <material
         name="">
@@ -312,7 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/Link 5.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/Link 5.STL" />
       </geometry>
     </collision>
   </link>
@@ -320,7 +320,7 @@
     name="Joint 5"
     type="revolute">
     <origin
-      xyz="0.2454 0 0"
+      xyz="0.245398689130573 0 0"
       rpy="0 0 0" />
     <parent
       link="Link 4" />
@@ -356,7 +356,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/link 6.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/link 6.STL" />
       </geometry>
       <material
         name="">
@@ -370,7 +370,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://Fanuc - LR Mate-200iD_V1/meshes/link 6.STL" />
+          filename="package://fanuc_ir_mate_200id_v2/meshes/link 6.STL" />
       </geometry>
     </collision>
   </link>

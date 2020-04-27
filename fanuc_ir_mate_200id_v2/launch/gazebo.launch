@@ -10,7 +10,7 @@
     name="spawn_model"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find Fanuc - LR Mate-200iD_V1)/urdf/Fanuc - LR Mate-200iD_V1.urdf -urdf -model Fanuc - LR Mate-200iD_V1"
+    args="-file $(find fanuc_ir_mate_200id_v2)/urdf/fanuc_ir_mate_200id_v2.urdf -urdf -model fanuc_ir_mate_200id_v2"
     output="screen" />
   <node
     name="fake_joint_calibration"

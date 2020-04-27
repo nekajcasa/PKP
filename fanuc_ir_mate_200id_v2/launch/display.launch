@@ -6,7 +6,7 @@
     default="False" />
   <param
     name="robot_description"
-    textfile="$(find Fanuc - LR Mate-200iD_V1)/urdf/Fanuc - LR Mate-200iD_V1.urdf" />
+    textfile="$(find fanuc_ir_mate_200id_v2)/urdf/fanuc_ir_mate_200id_v2.urdf" />
   <param
     name="use_gui"
     value="$(arg gui)" />
@@ -22,5 +22,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find Fanuc - LR Mate-200iD_V1)/urdf.rviz" />
+    args="-d $(find fanuc_ir_mate_200id_v2)/urdf.rviz" />
 </launch>
