@@ -18,6 +18,6 @@
   <node name="spawn_gazebo_model" pkg="gazebo_ros" type="spawn_model" args="-urdf -param robot_description -model robot -x 0 -y 0 -z 0"
     respawn="false" output="screen" />
 
-  <include file="$(find move_it_fanuc_ir_mate_200id_v1)/launch/ros_controllers.launch"/>
+  <include file="$(find moveit_fanucir_mate_200id_v2)/launch/ros_controllers.launch"/>
 
 </launch>

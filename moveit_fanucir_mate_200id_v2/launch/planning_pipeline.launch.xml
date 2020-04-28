@@ -5,6 +5,6 @@
 
   <arg name="pipeline" default="ompl" />
 
-  <include file="$(find move_it_fanuc_ir_mate_200id_v1)/launch/$(arg pipeline)_planning_pipeline.launch.xml" />
+  <include file="$(find moveit_fanucir_mate_200id_v2)/launch/$(arg pipeline)_planning_pipeline.launch.xml" />
 
 </launch>

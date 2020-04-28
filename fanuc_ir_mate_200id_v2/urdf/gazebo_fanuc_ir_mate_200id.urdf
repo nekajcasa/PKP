@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="fanuc_ir_mate_200id_v2">
+    <link name="base">
+        
+<inertial>
+            <origin xyz="-0.0068268 -0.00032168 0.080423" rpy="0 0 0" />
+            <mass value="4.8533" />
+            <inertia ixx="0.021987" ixy="-0.0001185" ixz="0.00014303" iyy="0.023829" iyz="-3.0601E-05" izz="0.022801" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/base.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/base.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Link 1">
+        
+<inertial>
+            <origin xyz="0.0395165862325428 -0.000714780375481283 0.326948773485214" rpy="0 0 0" />
+            <mass value="14.0629656801171" />
+            <inertia ixx="0.858841623077969" ixy="-0.00061674822246848" ixz="-0.132760805503396" iyy="0.913159722757177" iyz="-0.00110909207111619" izz="0.13314943975627" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint 1" type="revolute">
+        <origin xyz="0 0 0.042741" rpy="0 0 0" />
+        <parent link="base" />
+        <child link="Link 1" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="3.14" effort="15" velocity="6" />
+    </joint>
+    <link name="Link 2">
+        
+<inertial>
+            <origin xyz="-0.007993 -0.0018012 0.12126" rpy="0 0 0" />
+            <mass value="6.3616" />
+            <inertia ixx="0.10665" ixy="8.068E-05" ixz="0.0014511" iyy="0.087068" iyz="-0.00055746" izz="0.031702" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 2.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 2.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Joint 2" type="revolute">
+        <origin xyz="0.05 0 0.28726" rpy="0 0 0" />
+        <parent link="Link 1" />
+        <child link="Link 2" />
+        <axis xyz="0 1 0" />
+        <limit lower="-1.77" upper="2.5" effort="20" velocity="8" />
+    </joint>
+    <link name="Link 3">
+        
+<inertial>
+            <origin xyz="0.0082366584893896 0.000680320793238054 0.017645839129693" rpy="0 0 0" />
+            <mass value="2.39426298307034" />
+            <inertia ixx="0.00633470589018608" ixy="-4.95237019397927E-05" ixz="-0.000761330144977924" iyy="0.00732797870019393" iyz="-6.64889222936894E-05" izz="0.00726038168046429" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 3.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 3.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Joint 3" type="revolute">
+        <origin xyz="0 0 0.33" rpy="0 0 0" />
+        <parent link="Link 2" />
+        <child link="Link 3" />
+        <axis xyz="0 1 0" />
+        <limit lower="-3.5296" upper="1.27" effort="15" velocity="9.7" />
+    </joint>
+    <link name="Link 4">
+        
+<inertial>
+            <origin xyz="0.1089 0.0089142 0.05615" rpy="0 0 0" />
+            <mass value="0.00082621" />
+            <inertia ixx="2.6567E-08" ixy="-1.0653E-19" ixz="-2.9299E-25" iyy="2.7105E-08" iyz="2.3689E-24" izz="4.1244E-08" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 4.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="1 0.93333 0.13333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 4.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Joint 4" type="revolute">
+        <origin xyz="0.0880013108830273 0 0.0350266000000001" rpy="0 0 0" />
+        <parent link="Link 3" />
+        <child link="Link 4" />
+        <axis xyz="1 0 0" />
+        <limit lower="-3.3" upper="3.3" effort="8.86" velocity="9.77" />
+    </joint>
+    <link name="Link 5">
+        
+<inertial>
+            <origin xyz="0.017472 0.0029843 -6.4134E-05" rpy="0 0 0" />
+            <mass value="0.44624" />
+            <inertia ixx="0.00029866" ixy="2.7659E-05" ixz="4.1796E-08" iyy="0.0005998" iyz="1.4464E-09" izz="0.0005763" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 5.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/Link 5.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Joint 5" type="revolute">
+        <origin xyz="0.245398689130573 0 0" rpy="0 0 0" />
+        <parent link="Link 4" />
+        <child link="Link 5" />
+        <axis xyz="0 1 0" />
+        <limit lower="-2.1817" upper="2.1817" effort="8.86" velocity="9.77" />
+    </joint>
+    <link name="link 6">
+        
+<inertial>
+            <origin xyz="4.9958E-09 -2.493E-08 0.0024231" rpy="0 0 0" />
+            <mass value="0.0067922" />
+            <inertia ixx="3.6282E-06" ixy="3.7711E-10" ixz="-5.7457E-14" iyy="3.6291E-06" iyz="2.4848E-13" izz="7.177E-06" />
+        </inertial>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/link 6.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.79216 0.81961 0.93333 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://fanuc_ir_mate_200id_v2/meshes/link 6.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Joint 6" type="revolute">
+        <origin xyz="0.0755 0 0" rpy="3.1416 1.5708 0" />
+        <parent link="Link 5" />
+        <child link="link 6" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-6.28" upper="6.28" effort="4.9" velocity="15.7" />
+        <calibration falling="0" rising="0" />
+        <dynamics damping="0" friction="0" />
+    </joint>
+    <link name="tool0" />
+    <joint name="joint_6-tool0" type="fixed">
+        <parent link="link 6" />
+        <child link="tool0" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+    </joint>
+    
+<transmission name="trans_joint 1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="joint 1">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="joint 1_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Joint 2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Joint 2">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Joint 2_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Joint 3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Joint 3">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Joint 3_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Joint 4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Joint 4">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Joint 4_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Joint 5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Joint 5">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Joint 5_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_Joint 6">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="Joint 6">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="Joint 6_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>

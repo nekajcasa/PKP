@@ -1,12 +1,12 @@
 <package>
 
-  <name>move_it_fanuc_ir_mate_200id_v1</name>
+  <name>moveit_fanucir_mate_200id_v2</name>
   <version>0.3.0</version>
   <description>
      An automatically generated package with all the configuration and launch files for using the fanuc_ir_mate_200id_v2 with the MoveIt Motion Planning Framework
   </description>
-  <author email="maticko.music@gmail.com">TimMusic</author>
-  <maintainer email="maticko.music@gmail.com">TimMusic</maintainer>
+  <author email="nekajcasa@gmail.com">TimMusic</author>
+  <maintainer email="nekajcasa@gmail.com">TimMusic</maintainer>
 
   <license>BSD</license>
 

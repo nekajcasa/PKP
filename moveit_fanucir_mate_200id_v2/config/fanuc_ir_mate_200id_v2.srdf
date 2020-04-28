@@ -9,7 +9,7 @@
     <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
-    <group name="arm">
+    <group name="roka">
         <joint name="joint 1" />
         <joint name="Joint 2" />
         <joint name="Joint 3" />
@@ -17,12 +17,20 @@
         <joint name="Joint 5" />
         <joint name="Joint 6" />
     </group>
+    <group name="tool">
+        <link name="tool0" />
+    </group>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="gripper" parent_link="link 6" group="tool" />
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
     <disable_collisions link1="Link 1" link2="Link 2" reason="Adjacent" />
+    <disable_collisions link1="Link 1" link2="Link 3" reason="Never" />
     <disable_collisions link1="Link 1" link2="base" reason="Adjacent" />
     <disable_collisions link1="Link 2" link2="Link 3" reason="Adjacent" />
+    <disable_collisions link1="Link 2" link2="base" reason="Never" />
     <disable_collisions link1="Link 3" link2="Link 4" reason="Adjacent" />
     <disable_collisions link1="Link 3" link2="Link 5" reason="Never" />
+    <disable_collisions link1="Link 3" link2="base" reason="Never" />
     <disable_collisions link1="Link 3" link2="link 6" reason="Never" />
     <disable_collisions link1="Link 4" link2="Link 5" reason="Adjacent" />
     <disable_collisions link1="Link 4" link2="link 6" reason="Never" />

@@ -1,5 +1,5 @@
 controller_list:
-  - name: fake_arm_controller
+  - name: fake_roka_controller
     joints:
       - joint 1
       - Joint 2
@@ -7,6 +7,9 @@ controller_list:
       - Joint 4
       - Joint 5
       - Joint 6
+  - name: fake_tool_controller
+    joints:
+      []
 initial:  # Define initial robot poses.
-#  - group: arm
+#  - group: roka
 #    pose: home

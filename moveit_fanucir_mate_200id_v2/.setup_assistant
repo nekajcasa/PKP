@@ -7,5 +7,5 @@ moveit_setup_assistant_config:
     relative_path: config/fanuc_ir_mate_200id_v2.srdf
   CONFIG:
     author_name: TimMusic
-    author_email: maticko.music@gmail.com
-    generated_timestamp: 1587992159
+    author_email: nekajcasa@gmail.com
+    generated_timestamp: 1588091978

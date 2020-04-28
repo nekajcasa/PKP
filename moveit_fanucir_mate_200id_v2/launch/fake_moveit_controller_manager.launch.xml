@@ -4,6 +4,6 @@
   <param name="moveit_controller_manager" value="moveit_fake_controller_manager/MoveItFakeControllerManager"/>
 
   <!-- The rest of the params are specific to this plugin -->
-  <rosparam file="$(find move_it_fanuc_ir_mate_200id_v1)/config/fake_controllers.yaml"/>
+  <rosparam file="$(find moveit_fanucir_mate_200id_v2)/config/fake_controllers.yaml"/>
 
 </launch>

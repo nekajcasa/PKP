@@ -155,8 +155,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-2.5307"
-      upper="1.7453"
+      lower="-1.77"
+      upper="2.5"
       effort="20"
       velocity="8" />
   </joint>
@@ -213,8 +213,8 @@
     <axis
       xyz="0 1 0" />
     <limit
-      lower="-1.2217"
-      upper="3.5779"
+      lower="-3.5296"
+      upper="1.27"
       effort="15"
       velocity="9.7" />
   </joint>
@@ -391,5 +391,15 @@
       upper="6.28"
       effort="4.9"
       velocity="15.7" />
+    <calibration falling="0" rising="0"/>
+    <dynamics damping="0" friction="0"/>
   </joint>
+  <link name="tool0"/>
+    <joint name="joint_6-tool0" type="fixed">
+    <parent link="link 6"/>
+    <child link="tool0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+
 </robot>

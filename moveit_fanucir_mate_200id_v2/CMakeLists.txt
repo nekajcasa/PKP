@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.3)
-project(move_it_fanuc_ir_mate_200id_v1)
+project(moveit_fanucir_mate_200id_v2)
 
 find_package(catkin REQUIRED)
 
